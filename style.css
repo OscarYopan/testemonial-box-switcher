@@ -1,21 +1,96 @@
-/*Reset*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Default*/
 html{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
 }
 
 body{
+  background-color: #A6837B;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  padding: 1rem;
+}
+
+.testemonial-container {
+  background-color: #0BD9D9;
+  border: none;
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+  padding: 5rem 8rem;
+  max-width: 768px;
+  position: relative;
+}
+
+.fa-solid {
+  color: #BF4F26;
+  font-size: 3rem;
+  position: absolute;
+  top: 7rem;
+}
+
+.fa-quote-right {
+  left: 4rem;
+}
+
+.fa-quote-left {
+  right: 4rem;
+}
+
+.testemonial {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 7.5rem;
+  width: 7.5rem;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 1rem;  
+}
+
+.progress-bar{
+  background-color: #F27D16;
+  height: .4rem;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+  margin-bottom: 2rem;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0)
+  }
+}
+
+@media (max-width: 768px) {
+  .testemonial-container {
+    width: 90%;
+    padding: 2.5rem 4rem;
+  }
+
+  .fa-solid {
+    display: none;
+  }
 }
