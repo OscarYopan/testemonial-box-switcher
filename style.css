@@ -38,11 +38,11 @@ body{
 }
 
 .fa-quote-right {
-  left: 4rem;
+  right: 4rem;
 }
 
 .fa-quote-left {
-  right: 4rem;
+  left: 4rem;
 }
 
 .testemonial {
