@@ -22,7 +22,7 @@ body{
 
 .testemonial-container {
   background-color: #0BD9D9;
-  border: none;
+  border: 3px solid #0F9FBF;
   border-radius: 1.5rem;
   margin: 2rem auto;
   padding: 5rem 8rem;
@@ -52,6 +52,7 @@ body{
 }
 
 .user {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,6 +61,7 @@ body{
 
 .user .user-image {
   border-radius: 50%;
+  border: 3px solid #F27D16;
   height: 7.5rem;
   width: 7.5rem;
   object-fit: cover;
@@ -91,6 +93,6 @@ body{
   }
 
   .fa-solid {
-    display: none;
+    color: transparent;
   }
 }
