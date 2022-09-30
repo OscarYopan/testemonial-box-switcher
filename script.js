@@ -61,9 +61,20 @@ const testimonials = [
 let idx = 1
 
 function updateTestemonial() {
-  const { name, position, phoyo, text } = testimonials[idx]
+  const { name, position, photo, text } = testimonials[idx]
+
+  testemonial.innerHTML = text
+  userImage.src = photo
+  userName.innerHTML = name
+  role.innerHTML = position
+
+  idx++
+
+  if(idx > testimonials.length -1) {
+    idx = 0
+  }
 }
 
-updateTestemonial()
+setInterval(updateTestemonial, 10000)
 
 
